@@ -42,7 +42,7 @@ a {
     text-transform: capitalize;
     width: 200px;
     height: 50px;
-    background-color: #318db2;
+    background-color: #003b61;
     color: #fff;
     font-size: 20px;
     margin: 5px;
@@ -53,7 +53,7 @@ a {
 }
 
 .links>li>a:hover {
-    color: #003b61;
+    /* color: #003b61; */
     bottom: 5px;
     background-color: #30b1ce;
 }
@@ -61,7 +61,7 @@ a {
 #banner {
     height: 100vh;
     position: relative;
-    background-color: #003b61;
+    /* background-color: #003b61; */
 }
 
 #banner h1 {
@@ -77,11 +77,11 @@ a {
 
 #banner h1:nth-child(1) {
     color: transparent;
-    -webkit-text-stroke: 2px lightblue;
+    -webkit-text-stroke: 2px #076eb2;
 }
 
 #banner h1:nth-child(2) {
-    color: #30b1ce;
+    color: #30b1cea1;
     animation: animate 4s ease-in-out infinite;
 }
 
@@ -193,19 +193,19 @@ a {
 .skill-js {
     animation: progress-js 2s ease-in-out;
     background: linear-gradient(to right, #FFD700, #FFA500);
-    width: 70%;
+    width: 60%;
 }
 
 .skill-php {
     animation: progress-php 2s ease-in-out;
     background: linear-gradient(to right, #07ce5d, #dbea38);
-    width: 60%;
+    width: 30%;
 }
 
 .skill-sql {
     animation: progress-mysql 2s ease-in-out;
     background: linear-gradient(to right, #3b228b, #00BFFF);
-    width: 60%;
+    width: 50%;
 }
 
 /* Animation */
@@ -235,7 +235,7 @@ a {
     }
 
     to {
-        width: 70%;
+        width: 60%;
     }
 }
 
@@ -245,7 +245,7 @@ a {
     }
 
     to {
-        width: 60%;
+        width: 30%;
     }
 }
 
@@ -364,13 +364,17 @@ img {
 }
 
 /* contact */
+#contact {
+    margin-top: 200px;
+}
+
 #contact .container {
     display: flex;
     justify-content: space-evenly;
 }
 
-.form {
-    background-color: #fff;
+figcaption p {
+    margin-bottom: 20px;
 }
 
 .form p {
@@ -406,6 +410,33 @@ textarea.memo:focus {
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2)
 }
 
-.form:hover {
-    box-shadow: 5px 5px 15px gainsboro;
+footer {
+    margin-top: 100px;
+    width: 100%;
+    background-color: lightblue;
+}
+
+.media-icon {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 10px 0;
+}
+
+.media-icon a {
+    position: relative;
+    font-size: 24px;
+    color: #003a6184;
+    margin-right: 10px;
+    bottom: 0;
+    transition: all .3s ease;
+}
+
+.media-icon a:hover {
+    color: #003b61;
+    bottom: 5px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 12px;
 }
